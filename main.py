@@ -1,12 +1,8 @@
 import requests
 
-url = "https://privatix-temp-mail-v1.p.rapidapi.com/request/mail/id/%7Bmd5%7D/"
+URL = "//restcountries.eu/rest/v2/name/{name}"
 
-headers = {
-    'x-rapidapi-host': "privatix-temp-mail-v1.p.rapidapi.com",
-    'x-rapidapi-key': "723a7f4069mshd39cc473ea7d918p1c8cacjsnd38cc7c107c8"
-    }
+res = requests.get(URL) # get the data
+res = res.json() # convert data to Python format
 
-response = requests.request("GET", url, headers=headers)
-
-print(response.text)
+print(res)
