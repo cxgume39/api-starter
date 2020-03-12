@@ -1,13 +1,15 @@
 import requests
 
 
-URL1 = "https://restcountries.eu/rest/v2/name/{name}"
-res = requests.get(URL1) # get the data
+Name = "https://restcountries.eu/rest/v2/name/united"
+res = requests.get(Name) # get the data
 
-
-res = requests.get(URL) # get the data
-
+res = requests.get(Name) # get the data
 res = res.json() # convert data to Python format
+
+
+
+
 
 
 
